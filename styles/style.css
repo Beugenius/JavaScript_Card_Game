@@ -1,0 +1,60 @@
+/*
+    Author: Bryce Hutchinson
+    Date: 2021-12-06
+*/
+html {
+    background-color: rgb(252, 251, 203);
+}
+h1, div#game{
+    display: block;
+    text-align: center; 
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: monospace;
+}
+h1 {
+    font-size: 5em;
+    
+}
+#gameTable {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 1em;
+}
+
+#gameTable td {
+    height: 3em;
+    background-color: aqua;
+    
+}
+
+td {
+    font-size: 4em;
+    min-width: 2.5em;
+    border-radius: .4em;
+    box-shadow: rgb(0,0,0) 10px 10px 20px;
+}
+
+#guesses {
+    padding-bottom: 1%;
+    font-size: 1.5em;
+    display: block;
+    float: right;
+    margin-right: 7%;
+    margin-top: 20%;
+}
+
+#winTitle {
+    font-size: 5em;
+    background-color: blueviolet;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 2em;
+    box-shadow: rgb(0,0,0) 10px 10px 20px;
+}
+
+#startForm {
+    font-size: 3em;
+}
