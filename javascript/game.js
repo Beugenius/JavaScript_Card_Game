@@ -271,6 +271,18 @@ function checkWin() {
         winTitle.innerHTML = "Congratulations! You Won In "+guesses+" guesses! Thanks For Playing!";
         // append element to where game board was 
         document.getElementById("game").appendChild(winTitle);
+        
+        var playAgain = document.createElement("button");
+        playAgain.setAttribute("id", "playAgain");
+        playAgain.innerHTML = "Play Again";
+        document.getElementById("game").appendChild(playAgain);
+        document.getElementById("playAgain").addEventListener('click', function() {
+            winTitle.remove();
+            document.getElementById("startForm").setAttribute("style", "display:inline");
+            document.getElementById("guesses").remove();
+            playAgain.remove();
+            guesses = 0; 
+        });
     }
 
 }
